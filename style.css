@@ -31,74 +31,79 @@ body {
 
 .overlay {
     position: absolute;
-    top: 110px;
-    right: 115px;
+    top: 10%;
+    right: 30%;
     font-weight: bold;
     font-size: 30px;
 }
 .overlay1 {
     position: absolute;
-    top: 290px;
-    right: 815px;
+    top: 20%;
+    right: 55%;
     font-weight: bold;
     font-size: 30px;
     text-align: left;
     color: white;
+    
 }
-@keyframes slideInFromLeft {
-    0% {
-      transform: translateX(-100%);
-    }
-    100% {
-      transform: translateX(0);
-    }
-  }
-  
-  .animation {  
-    /* This section calls the slideInFromLeft animation we defined above */
-    animation: 1s ease-out 0s 1 slideInFromLeft;
 
-    padding: 30px;
-  }
-  
-  @keyframes slideInFromRight {
-    0% {
-      transform: translateX(100%);
-    }
-    100% {
-      transform: translateX(0);
-    }
-  }
-  /* This section calls the slideInFromRight animation we defined above */
-  .animation1 {
-    animation: 1s ease-out 0s 1 slideInFromRight;
-  }
   .overlay2 {
     position: absolute;
-    top: 435px;
-    right: 705px;
+    top: 65%;
+    right: 50%;
     font-weight: bold;
     font-size: 90px;
     text-align: left;
     color: white;
+    
 }
 .overlay3 {
     position: absolute;
-    top: 470px;
-    right: 705px;
     font-weight: bold;
     font-size: 90px;
     text-align: left;
     color: white;
+    top: 70%;
+    right: 50%;
+
 }
 .overlay4 {
     position: absolute;
-    top: 400px;
-    right: 705px;
     font-weight: bold;
     font-size: 90px;
     text-align: left;
     color: white;
+    top: 75%;
+    right: 50%;
+
+}
+@keyframes slideInFromLeft {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+.animation {  
+  /* This section calls the slideInFromLeft animation we defined above */
+  animation: 1s ease-out 0s 1 slideInFromLeft;
+
+  padding: 30px;
+}
+
+@keyframes slideInFromRight {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+/* This section calls the slideInFromRight animation we defined above */
+.animation1 {
+  animation: 1s ease-out 0s 1 slideInFromRight;
 }
 @keyframes slideInFromDown {
     0% {
@@ -127,4 +132,11 @@ body {
 .text {
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     color: darkblue;
+}
+.paragraph {
+  padding: 10%;
+}
+.paragraphimg {
+  padding: 10%;
+  border-radius: 2px;
 }
