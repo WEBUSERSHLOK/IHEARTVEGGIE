@@ -67,18 +67,7 @@
         <a href="menu.html"><button type="button" class="btn btn-primary"
                 style="font-size: x-large; border-radius: 22px;">Green Menu</button></a>
     </div>
-    <div class="overlay2 animation2">
-        <br>
-        <i class="fa-solid fa-angle-down"></i>
-    </div>
-    <div class="overlay3 animation2">
-        <br>
-        <i class="fa-solid fa-angle-down"></i>
-    </div>
-    <div class="overlay4 animation2">
-        <br>
-        <i class="fa-solid fa-angle-down"></i>
-    </div>
+
 
     <br><br>
     <div class="row">
@@ -87,18 +76,50 @@
         <div class="container-fluid">
             <h2 class="text">Welcome to I HEART VEGGIE, a vegetarian restaurant that offers all types of vegetarian options from different cusines. We invite you to help endorse our project and work we are doing. My name is Joe Bob, and I am the head chef here. We have many different locations as well and we are trying to grow through the United States. Our signiture dishes include ingredients that are grown at a farm and shipped to us. We will explain the processes od making the dishes and explain our sustainability, so take a visit to the different pages.
 
-      So... if you're ready - there's only one more thing you'll need to do:</h2>
+     </h2>
 
         </div>
         
     </div>
     <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 home">
-        <h2 class="text">Please enter your details</h2>
-        <div class="container-fluid">
-            HEllo!
-        </div>
+        
+        <img src="Asset/img/photo-1517248135467-4c7edcad34c4.avif">
     </div>
 </div>
+<div class="col-lg-12 col-sm-12 col-md-12 col-xs-12">
+    <h2 class="Question"> Frequent Questions for I HEART VEGGIES</h2>
+
+
+    <button class="accordion"
+      style="font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;">What are the timings for days?</button>
+    <div class="panel">
+      <p style="color: black;">On weekends, we open at 10am and close at 10pm. For weekdays, we open at 10am, but we close at 8pm.</p>
+    </div>
+
+
+    <button class="accordion"
+      style="font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;">How will I know if my idea for the dish was approved?</button>
+    <div class="panel">
+      <p style="color: black;">If you don't see your item on the menu in a week, then it's not.</p>
+    </div>
+
+
+    <button class="accordion"
+      style="font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;">Are you off on holidays?</button>
+    <div class="panel">
+      <p style="color: black;">No, we are open everyday. If we need to be off, we will inform you over here!</p>
+    </div>
+
+    <button class="accordion"
+      style="font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;">Are you partnered with farms?</button>
+    <div class="panel">
+      <p style="color: black;">Yes, farms that grow neccessary crops are in touch with us.</p>
+    </div>
+
+    <br>
+    <p id="Question_4" style="font-size:25px;"><strong></strong></strong></p>
+    <br><br>
+  </div>
             <script>
                 const navEl = document.querySelector('.navbar');
 
@@ -109,7 +130,20 @@
                         navEl.classList.remove('navbar-scrolled');
                     }
                 })
+                var acc = document.getElementsByClassName("accordion");
+    var i;
 
+    for (i = 0; i < acc.length; i++) {
+      acc[i].addEventListener("click", function () {
+        this.classList.toggle("active");
+        var panel = this.nextElementSibling;
+        if (panel.style.display === "block") {
+          panel.style.display = "none";
+        } else {
+          panel.style.display = "block";
+        }
+      });
+    }
             </script>
 
 </body>
